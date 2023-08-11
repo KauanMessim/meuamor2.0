@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+
+<head>
+    <title>meu primeiro formulário</title>
+    <meta charset="UTF-8">
+    <link href="css/formulário.css" rel="stylesheet">
+    
+</head>
+
+<body background="imagens/Formulário/apostaredes.jpg"
+
+
+    <h1>Faça Sua Aposta</h1>
+    <br><br>
+    <form> <!-- TAG DE FORMULÁRIO -->
+
+        <label> Digite seu nome: </label>
+        <input type="text" name="nome" placeholder="Digite sua respota">
+        <br><br>
+        <label> Digite sua Senha: </label>
+        <input type="password" name="senha" placeholder="Sua Senha">
+        <br><br>
+
+        <label>Digite o Produto: </label><br>
+        <select name="tipoProduto">
+                <option> Apostas </option>
+        </select>
+        <br> <br> Qual é a Sua Escolha ? <br>
+        <br>
+        <img src="imagens/escudos das equipes/interdemeiaof.c.png" alt="meiao" width="120px" height="110px"> <label>  <input type="checkbox" name="Apostas" value="meiao"> Inter de Meião FC X Inter de Melão FC</label> <label>  <input type="checkbox" name="Apostas" value="melao"> <img src="imagens/escudos das equipes/interdemelao.png" alt="melao" width="110px" height="110px">
+        <br>
+        <p> Qual é o seu palpite ? </p>
+        <table border="1px">
+     
+          <tr>
+              <td><label>(Casa)</label><input type="radio" name="cover" value="CASA"><br></td>
+              <td><label>(Empate)</label><input type="radio" name="cover" value="Empate"><br></td>
+              <td><label>(Fora)</label><input type="radio" name="cover" value="Fora"><br></td>
+          </tr>
+          <tr>
+              <td>3,50</td>
+              <td>5,00</td>
+              <td>4,00</td>
+          </tr>
+          </table>      
+        <br> 
+        <p> Escanteios :</p>   <label> </label> <input value="11">
+        <table border="6px">  
+      <tr> 
+          <td><label> Mais de:</label><input type="radio" name="cover" value="Mais de"><br></td>
+          <td><label> Exactamente:</label> <input type="radio" name="cover" value="exactamente"><br></td>
+          <td><label> Menos de: </label> <input type="radio" name="cover" value="menos de"><br></td>
+      </tr>
+      </table>
+        <p> Valor </p> <input placeholder="Valor da aposta">
+        <button>Fazer Aposta</button>
+        <button type="reset"> Apagar</button>
+        </form>
+        <br>
+        <footer class="rodape">
+          <p>Sejam Bem-Vindos Ao Melhor Site de Aposta do Brasil!</p>
+          <p><a href="HOME.html">REDES.BET</a></p>
+        </footer>
+    <footer class="rodape">
+          <p>Boa Sorte!</p>
+    </footer>
+
+    </body>
+
+    </html>

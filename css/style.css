@@ -1,0 +1,233 @@
+/* Alterações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  p {
+    font-size: 1em;
+  }
+  
+  body {
+    width: 100%;
+    background: rgb(163, 0, 101);
+  }
+  
+  /* Rolagem do site */
+  body::-webkit-scrollbar {
+    width: 1.5vh;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #6e6e6e;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    border: 3px solid #6e6e6e;
+  }
+  
+  /* Produtos */
+  .tituloProd {
+    width: 100%;
+    background-color: #000000;
+    text-align: center;
+    color: floralwhite;
+    font-size: 2em;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .produtosFlex {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .produtosItem {
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  .produtosItem img {
+    box-shadow: 0 0 1em rgb(255, 115, 0);
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  .produtosItem img:hover {
+    box-shadow: 0 0 1em rgb(41, 146, 59);
+  }
+  
+  .produtosh2 {
+    color: #ac3993;
+    font-size: 1.5em;
+  }
+  
+  .produtosh2:hover {
+    color: #ff9100;
+  }
+  
+  .produtosh3 {
+    font-size: 1.8em;
+  }
+  
+  .botaoCompraProdutos {
+    font-size: 1.5em;
+    line-height: 2;
+    color: rgba(0, 0, 0, 0.9);
+    text-transform: uppercase;
+    width: 180px;
+    height: 12%;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+    box-shadow: 0 0 1em rgb(0, 61, 33);
+    transition: width .2s ease-in-out;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .botaoCompraProdutos:hover {
+    width: 220px;
+    background: #b103a8;
+    color: white;
+  }
+  
+  /* Redimensionando titulo e preço do flexItens de produtos */
+  @media screen and (max-width: 600px){
+    .produtosh2 {
+      font-size: 1.1em;
+    }
+    
+    .produtosh3 {
+      font-size: 1.4em;
+    }
+  }
+  
+  /* Tooltips */
+  .tooltipText {
+    visibility: hidden;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 0;
+  
+    /* Definindo posição "padrão" a ele */
+    position: absolute;
+    z-index: 1;
+    margin-left: 135px;
+    font-size: 15px;
+    width: auto;
+    height: auto;
+    background-color: rgb(95, 94, 94);
+    color: rgb(219, 219, 219);
+  }
+  
+ /* Rodapé */
+.rodape {
+  display: block;
+  background: linear-gradient(90deg, rgb(255, 0, 191) 0%, rgb(255, 0, 242) 25%, rgb(145, 2, 121) 100%);
+  bottom: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.containerRodape {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem;
+  color: floralwhite;
+}
+
+.containerRodape img {
+  float: left;
+  width: auto;
+  height: auto;
+}
+
+.criadoPor {
+  float: right;
+  padding-right: 30px;
+}
+
+.criadoPorTitulo {
+  text-align: right;
+  font-size: 1.8em;
+  background: -webkit-linear-gradient(90deg, rgb(250, 156, 250) 0%, rgb(250, 162, 147) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.criadoPorPessoas {
+  text-align: right;
+  font-size: 1.5em;
+  background: -webkit-linear-gradient(94deg, rgba(188,236,255,1) 0%, rgba(194,187,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.criadoPorAno {
+  text-align: right;
+  font-size: 1em;
+  background: -webkit-linear-gradient(90deg, rgb(250, 156, 250) 0%, rgb(250, 162, 147) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Redimensionando rodapé */
+@media screen and (max-width: 745px) {
+  .criadoPorTitulo {
+    font-size: 1.5em;
+  }
+
+  .criadoPorPessoas {
+    font-size: 1.2em;
+  }
+  .criadoPorAno {
+    font-size: 0.85em;
+  }
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-left: 0px;
+  margin-top: 0px;
+  background: rgb(111, 0, 255);
+}
+
+.logo img {
+  padding: 5px;
+}
+
+.logo a img:hover {
+  opacity: 0.68;
+}

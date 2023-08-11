@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+  }
+
+  /* Produtos */
+.tituloProd {
+    width: 100%;
+    background-color: #000000;
+    text-align: center;
+    color: floralwhite;
+    font-size: 2em;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .produtosFlex {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .produtosItem {
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  .produtosItem img {
+    box-shadow: 0 0 1em rgb(146, 41, 41);
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  .produtosItem img:hover {
+    box-shadow: 0 0 1em rgb(41, 146, 59);
+  }
+  
+  .produtosh2 {
+    color: #dd0000;
+    font-size: 1.5em;
+  }
+  
+  .produtosh2:hover {
+    color: #a80000;
+  }
+  
+  .produtosh3 {
+    font-size: 1.8em;
+  }
+  
+  .botaoCompraProdutos {
+    font-size: 1.5em;
+    line-height: 2;
+    color: rgba(0, 0, 0, 0.9);
+    text-transform: uppercase;
+    width: 180px;
+    height: 10%;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+    box-shadow: 0 0 1em rgb(0, 61, 33);
+    transition: width .2s ease-in-out;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .botaoCompraProdutos:hover {
+    width: 220px;
+    background: #099755;
+    color: white;
+  }
+  
+  /* Redimensionando titulo e preço do flexItens de produtos */
+  @media screen and (max-width: 600px){
+    .produtosh2 {
+      font-size: 1.1em;
+    }
+    
+    .produtosh3 {
+      font-size: 1.4em;
+    }
+  }
